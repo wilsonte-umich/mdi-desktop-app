@@ -10,7 +10,7 @@ nav_order: 20
 
 The MDI apps server can be launched on different computers
 depending on your needs. In all cases, you will access the data
-analysis apps via a web browser embedded into the desktop app.
+analysis apps via a web browser embedded into the Desktop.
 
 ### Local computer mode 
 
@@ -32,8 +32,7 @@ server run on the same local computer.
 </div>
 
 Local mode is responsive and secure, but you must manually transfer 
-processed data files to your computer, or a provider needs to share
-such files with you, e.g., via email.
+processed data files to your computer.
 
 ### Remote server mode 
 
@@ -64,7 +63,7 @@ The local computer connects to the server via a secure SSH tunnel.
 </div>
 
 In Remote mode, you can use the Pipeline Runner to
-execute Stage 1 pipelines and then analyze their output using Stage 2 apps on the same server. 
+execute Stage 1 Pipelines and then analyze their output using Stage 2 Apps on the same server. 
 For users with an HPC solution accessible by SSH, the slightly more complex configuration is 
 an excellent trade-off for the added capabilities when running the MDI remotely.
 

@@ -21,9 +21,8 @@ or click **Terminal** to open a separate shell in a new window.
 
 ### (Re)Install the MDI
 
-The first time you are working on a new target computer 
-you must click **(Re)Install** to install the needed MDI repositories
-and packages.
+The first time you work on a new target computer you must click 
+**(Re)Install** to install the needed MDI repositories and packages.
 
 Usually, you can skip re-installation in future visits.
 However, when you want to update to a new version of R, you must
@@ -33,6 +32,10 @@ force a hard update of all code.
 The MDI requires many resources to run, so initial installation 
 will take many minutes, especially on a Linux server where code
 needs to be compiled. It will go much faster the second time. 
+
+Alternatively, if your server and tool suite in a single-suite
+installation support an apps server Singularity container,
+no further installation will be needed and it will be very fast.
 
 Watch the installation progress in the black terminal window - 
 you will be ready to proceed when you see a command prompt
@@ -46,7 +49,7 @@ side of the app.
 
 Notice the **tall vertical open/close button** in the middle or to the
 left of the screen. This button toggles the visibility of the server
-configuration and terminal panels during use (the server is always
+configuration and terminal panels (the server is always
 there reporting its log stream, even when you hide it).
 
 The MDI Desktop is a minimal web browser. You will
@@ -63,11 +66,9 @@ for information on how to proceed once the interface is running.
 When you are done working, click the tall vertical open/close button
 to expose the server controls and click **Stop** to end your 
 server session. In remote modes, click **Disconnect**
-to end your SSH session. You must disconnect before re-connecting
-to a different server.
+to end your SSH session. 
 
-You can also just close/quit the desktop app,
-without using the Stop and Disconnect buttons.
+You can also just close/quit the desktop app.
 Any servers and jobs running on remote computers will terminate
 once the SSH connection is dropped. 
 

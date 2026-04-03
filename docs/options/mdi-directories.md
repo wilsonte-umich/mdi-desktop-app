@@ -17,13 +17,12 @@ In a remote mode, they should be on the HPC server.
 ### MDI Directory **
 
 You must always provide the full path where you would 
-like to (or have already) installed the MDI.
+like to (or already have) installed the MDI.
 
 If `MDI Directory` ends with folder `mdi` it will be used as is, otherwise 
 code will be installed into a new subfolder named `mdi`.
 The installer will create the `mdi` subfolder as needed, but 
-the parent folder must already exist. 
-Thus, the following examples are equivalent.
+the parent folder must already exist. Thus, the following examples are equivalent.
 
 **Windows**
 - C:\path\to\mdi  
@@ -58,7 +57,7 @@ Alternatively, you may wish
 to share the data files produced by Stage 2 apps between multiple users
 by providing a value for `Data Directory`, 
 i.e., the full path to any valid shared directory that will 
-replace the Stage 2 apps data folder.
+replace the Stage 2 Apps data folder.
 
 <div class="entityBox outerBox">
     <p class='entityBoxLabel'>Shared Data Folder</p>
@@ -89,8 +88,8 @@ Developers may additionally want to pre-install
 tool suites to make them easier for others to use. 
 You can access such hosted installations by providing a value for 
 `Host Directory`, i.e., the full path to a different, pre-existing `MDI Directory`.
-Stage 1 pipeline containers and environments and 
-Stage 2 app library folders will be used from that directory 
+Stage 1 Pipelines containers and environments and 
+Stage 2 Apps library folders will be used from that directory 
 instead of from `MDI Directory`.
 Additionally, you will have access to the hosted config and resources folders.
 

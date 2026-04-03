@@ -34,6 +34,4 @@ the complete local path to a secure SSH key file, which
 will allow you to log into the server without having
 to type a password.
 
-Please consult your server administrator for how to set up an SSH key.
-
 SSH keys are not supported by UM Great Lakes.

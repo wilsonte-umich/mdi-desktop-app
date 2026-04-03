@@ -8,12 +8,9 @@ nav_order: 20
 ## {{page.title}}
 
 The MDI requires that R be installed and available to run
-on the computer that acts as the web server. In addition
-to telling the Desktop how to access R, the following options
-let you create different MDI installations based on potentially
-multiple versions of R on the same computer.
+on the computer that acts as the web server. 
 
-If these options are left blank, `Rscript` or `Rscript.exe` 
+If the following options are left blank, `Rscript` or `Rscript.exe` 
 must already be available via the `PATH` environment variable,
 however, it is recommended to explicitly set the R path.
 
@@ -38,3 +35,8 @@ via the system `PATH` environment variable.
 
 - module load R/4.1.0 (e.g., on Great Lakes)
 - export PATH=/path/to/R-4.1.0:$PATH
+
+Importantly, R does not need to be available on your remote
+server if it and the tool suite in a single-suite installation
+both support Singularity apps containers, since R will be
+installed in the container.

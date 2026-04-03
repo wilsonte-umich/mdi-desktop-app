@@ -39,7 +39,7 @@ The integer number of CPUs you would like assigned
 to your web server job. 
 
 Only 1 CPU is required to run the MDI web server, but you may wish 
-to request 2 CPUs if you will be performing asynchronous tasks (recommended). 
+to request 2 CPUs if you will be performing asynchronous tasks. 
 Only rare users need to request more than 2 CPUs.
 
 ### Memory per CPU **
@@ -54,4 +54,4 @@ MB or GB, respectively.
 **Example (defaults)**
 - CPUs per Task = 2
 - Memory per CPU = 4g
-- 2 * 4 = 8 GB of total requested memory 
+- 2 * 4 = 8 GB of total requested memory, a good place to start

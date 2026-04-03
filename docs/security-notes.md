@@ -6,8 +6,8 @@ nav_order: 60
 
 ## {{ page.title }}
 
-The MDI takes security very seriously. There are real 
-concerns with running any software on your computer,
+The MDI takes security seriously. There are real 
+concerns with running software on your computer,
 and you should carefully consider the factors below 
 when installing and using the MDI Desktop and associated apps.
 
@@ -18,9 +18,9 @@ and use, and you bear all responsibility for doing so.
 
 The MDI Desktop is an 
 {% include external-link.html href="https://github.com/MiDataInt/mdi-desktop-app/" text="open-source project" %}
-maintained by the MDI team to allow you to review its code if desired,
+maintained by the MDI team to allow you to review its code,
 and we always abide by our 
-[Code of Conduct](https://midataint.github.io/docs/registry/00_index/#mdi-developer-code-of-conduct/).
+[Code of Conduct](https://midataint.github.io/docs/code-of-conduct/).
 
 The Desktop app code is 
 {% include external-link.html href="https://www.google.com/search?q=code+signing" text="properly signed" %},
@@ -42,10 +42,9 @@ The Desktop performs the following essential tasks:
 - uses {% include external-link.html href="https://cran.r-project.org/" text="R" %} to install packages from GitHub on your local or remote computer
 - uses {% include external-link.html href="https://shiny.rstudio.com/" text="R Shiny" %} to run web applications in the app's browser
 
-The app has one action - opening a new Terminal - 
-that loads an external window on your system. You will be prompted
-to confirm your agreement the first time you access it. No other actions
-are executed by the associated script.
+The app has one action (opening a new Terminal) that loads an external 
+window on your system. You will be prompted to confirm your agreement 
+the first time you access it. 
 
 ### MDI Apps Framework
 
@@ -59,7 +58,7 @@ and execute actions on your computer to allow you to:
 - load and save data files and bookmarks of app states
 - run resource intensive data analyses
 - if desired, edit code files and execute system commands that you write
-- load and execute third-party apps (see below)
+- load and execute third-party apps
 
 ### Third-party data analysis apps
 
@@ -70,21 +69,19 @@ those apps and is not responsible for their contents.
 
 MDI apps run in 
 {% include external-link.html href="https://cran.r-project.org/" text="R" %}, 
-which means that they have access to the computer running the web server
-(either your local computer or the remote server, but not both). 
+which means that they have access to the computer running the web server. 
 Apps can open files and run commands on the operating system. 
-_It is therefore essential that you trust the authors of any apps you use._
-Apps you trust should follow all 
-[MDI security practices](https://midataint.github.io/docs/registry/00_index/), 
-whether or not they are listed in the MDI suite registry.
+It is therefore essential that you trust the authors of any apps you use.
 
-Contact an app's developer and ask them if you are in doubt. 
+Apps you trust should follow the MDI 
+[Code of Conduct](https://midataint.github.io/docs/code-of-conduct/).
+Ask the app's developer if you are in doubt. 
 If you cannot identify the developer of an app, don't use it!
 
 You will be prompted the first time you use an app
 to indicate that you have considered the potential risks and 
-agree to accept them and continue.
+agree to continue.
 
-In addition, every time you open an app, the framework scans
-the app's code for an intent to execute code on the operating system. 
-If detected, you will again be prompted to allow the app to load.
+In addition, the framework scans all apps
+for an intent to execute code on the operating system. 
+If detected, you will be prompted to allow the app to load.

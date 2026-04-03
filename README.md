@@ -7,11 +7,9 @@ Stage 1 HPC **pipelines** and Stage 2 interactive web applications
 
 This is the repository for the **MDI Desktop App**,
 an [Electron](https://www.electronjs.org/) desktop app
-that makes it easy to configure a connection to the computer
-where you will run the
+that makes it easy to connect to the computer where you will install and run the
 [MDI apps framework](https://midataint.github.io/mdi-apps-framework/docs/overview)
-and to install and run the web server, all from your Windows or Mac
-computer.
+and access the apps web server from your Windows or Mac PC.
 
 ### Installation
 
