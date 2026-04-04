@@ -324,6 +324,10 @@ const handleInputChange = function(form, input){
     const type = form.dataset.type; 
     const option = input.name;
     const value = input.type === "checkbox" ? input.checked : input.value.trim();
+    const currentPreset = presets[presetSelect.value];
+    if(presetSelect.value !== "working" || !presets.working.options) {
+        presets.working = structuredClone(currentPreset);
+    }
     if(presets.working.options       === undefined) presets.working.options       = structuredClone(defaultPreset.options);
     if(presets.working.options[type] === undefined) presets.working.options[type] = structuredClone(defaultPreset.options[type]);
     presets.working.options[type][option] = value;
@@ -376,7 +380,7 @@ toggleAdvanced.addEventListener('click', function(){
 const modeRadios = document.serverMode.mode;
 for (const modeRadio of modeRadios) {
     modeRadio.addEventListener('change', function(){
-        presets.working = presets[presetSelect.value]; // since setServerMode changes to Working
+        // presets.working = presets[presetSelect.value]; // since setServerMode changes to Working
         setServerMode(this.value);
     });
 }
@@ -449,6 +453,8 @@ const updatePresets = function(){
 const changeToPreset = function(presetName){
     let preset = presets[presetName];
     if(!preset) preset = structuredClone(defaultPreset);
+    presets.working = structuredClone(preset);
+    presetSelect.value = presetName; // Ensure select is in sync
     setServerMode(preset.mode, true);
 };
 presetSelect.addEventListener('change', function(){ 
