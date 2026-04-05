@@ -44,5 +44,6 @@ jobs:
           CSC_KEY_PASSWORD: ${{ secrets.mac_csc_key_password }}
           APPLE_ID: ${{ secrets.apple_id }} # for notarization
           APPLE_ID_PASSWORD: ${{ secrets.apple_id_password }}
+          APPLE_APP_SPECIFIC_PASSWORD: ${{ secrets.apple_app_specific_password }}
           APPLE_TEAM_ID: ${{ secrets.apple_team_id }}
         run: npm run release
